@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <head>
+    <title>Mana lapa</title>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul class="menu">
+            <li>
+                <a href="/home">Home</a>
+            </li>
+
+            <li>
+                <a href="/calc">Calc</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <dic class="container">
+        <h1>Can you calculate me?</h1>
+        <input id="sk1" placeholder="Enter number" type="text">
+        <input id="darb" placeholder="+, -, /, *" type="text">
+        <input id="sk2" placeholder="Enter number" type="text">
+        <button class="button" onClick="suutiZinju();" type="button">Send</button>
+        <div id="rezultats"></div>
+    </div>
+  </body>
+</html>
