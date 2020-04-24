@@ -9,13 +9,19 @@
       <div class="container">
         <nav>
           <ul class="menu">
-            <li>
+            <li {% if active_page == 'home' %}
+                  class = "whenactivated"
+                {% endif %}>   
                 <a href="/home">Home</a>
             </li>
-            <li>
+            <li {% if active_page == 'calc' %}
+                  class = "whenactivated"
+                {% endif %}>   
                 <a href="/calc">Calc</a>
             </li>
-            <li>
+            <li {% if active_page == 'about' %}
+                  class = "whenactivated"
+                {% endif %}>   
                 <a href="/about">About</a>
             </li>
           </ul>
